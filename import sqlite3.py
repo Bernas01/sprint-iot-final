@@ -64,9 +64,9 @@ def processar_escolha(escolha, opcoes_selecionadas):
             if 'Tipo de vegetal ou fruta' in opcoes_selecionadas and 'Tipo de solo' in opcoes_selecionadas and 'Condições climáticas' in opcoes_selecionadas:
                 previsao = prever_colheita(opcoes_selecionadas['Tipo de vegetal ou fruta'], opcoes_selecionadas['Tipo de solo'], opcoes_selecionadas['Condições climáticas'])
                 print(f"Previsão de produtividade: {previsao}")
-                opcoes_selecionadas['Previsão de produtividade'] = previsao
+                opcoes_selecionadas['Previsão de Produtividade'] = previsao
             else:
-                print("Você precisa inserir o tipo de vegetal, tipo de solo e condições climáticas antes de prever a colheita.")
+                print("Você precisa inserir o tipo de egetal, tipo de solo e condições climáticas antes de prever a colheita.")
 
         elif escolha == 7:
             exibir_opcoes_selecionadas(opcoes_selecionadas)
